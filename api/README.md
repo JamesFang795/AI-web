@@ -15,7 +15,7 @@ This backend now supports PostgreSQL storage via SQLAlchemy + Alembic, email/pas
 2. Copy `.env` and fill in the following keys:
 
    ```env
-   DATABASE_URL=postgresql+psycopg://noteai:password@localhost:5432/appdb
+   DATABASE_URL=postgresql+psycopg://noteai:noteai@localhost:5432/appdb
    JWT_SECRET_KEY=your-very-long-random-secret
    CSRF_SECRET=another-random-secret
    SESSION_COOKIE_SECURE=false        # true in production over HTTPS

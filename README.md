@@ -22,7 +22,7 @@ docker compose up -d postgres redis
 
 2) 配置后端环境变量：复制 `api/.env`，填写关键项（与上面 docker-compose 默认账号保持一致）：  
 ```env
-DATABASE_URL=postgresql+psycopg://myuser:mypassword@localhost:5432/mydb
+DATABASE_URL=postgresql+psycopg://noteai:noteai@localhost:5432/appdb
 JWT_SECRET_KEY=your-long-random-secret
 CSRF_SECRET=another-random-secret
 SESSION_COOKIE_SECURE=false
